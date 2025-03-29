@@ -264,9 +264,4 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
         mirror: false
     });
-
-    // Initialize Particles.js
-    particlesJS.load('particles-js', 'scripts/particles.json', function() {
-        console.log('Particles.js loaded');
-    });
 });
