@@ -1156,7 +1156,7 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -1185,7 +1185,7 @@ ul {
     .btn {
         width: 100%;
     }
-}
+}*/
 
 @media (max-width: 576px) {
     .container {
@@ -1209,5 +1209,48 @@ ul {
         width: 40px;
         height: 40px;
         transform: rotate(calc(360deg / 4 * var(--i))) translateY(-110px) rotate(calc(-360deg / 4 * var(--i)));
+    }
+}
+
+/* Mobile Header Fix */
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 1rem 0;
+    }
+    
+    .hero {
+        padding-top: 80px !important; /* Space below header */
+        min-height: auto;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-text {
+        order: 2;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .hero-image {
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        font-family: 'Fira Code', monospace;
+        font-size: 1.2rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+    .hero-btns {
+        flex-direction: column;
     }
 }
